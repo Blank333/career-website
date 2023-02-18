@@ -4,17 +4,33 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <title>Careers</title>
   
+  <style>
+    .banner-img{
+      height: 420px;
+      width: 100%;
+      object-fit: cover;
+    }
+  </style>
 </head>
 <body>
-  <h1>Jovial Careers</h1>
-  <img src="../static/banner.jpg" height="320">
-  <p>Welcome to Jovial, a career website that connects talented professionals with exciting job opportunities at top companies. At Jovial, we understand the importance of finding the right fit when it comes to your career, and we're dedicated to helping you achieve your goals. Our mission is to provide a seamless platform that enables job seekers to browse and apply for positions with ease. With a range of industries and roles available, we aim to help you take your career to the next level. Discover your perfect job match and reach for the stars with Jovial.</p>
-  <h2>Open Positions</h2>
-  <p>No openings yet</p>
-  <button>Contact Us</button>
-  <p>Copyright 2023, Jovial</p>
+  <div class="container">
+    <div class="text-center">
+      <h1 class="mt-2 mb-4">Jovial Careers</h1>
+      <img class="img-fluid banner-img" src="../static/banner.jpg" />
+      <h2 class="mt-2 mb-4">About Jovial</h2>
+      <p class="lead about text-start">Welcome to Jovial, a career website that connects talented professionals with exciting job opportunities at top companies. At Jovial, we understand the importance of finding the right fit when it comes to your career, and we're dedicated to helping you achieve your goals. Our mission is to provide a seamless platform that enables job seekers to browse and apply for positions with ease. With a range of industries and roles available, we aim to help you take your career to the next level. Discover your perfect job match and reach for the stars with Jovial!</p>
+    </div>
+    <div class="text-center">
+      <h2 class="mt-2 mb-4">Open Positions</h2>
+      <p>No openings yet</p>
+    </div>
+    <div class="text-center">
+      <button class="btn btn-primary btn-lg">Contact Us</button>
+      <p class="mt-4">Copyright 2023, Jovial</p>
+    </div>
+  </div>
 </body>
 </html>
