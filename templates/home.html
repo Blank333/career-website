@@ -16,12 +16,17 @@
   </style>
 </head>
 <body>
+  {% include 'nav.html' %}
+  <img class="banner-img" src="/static/banner.jpg" />
   <div class="container">
     <div class="text-center">
       <h1 class="mt-2 mb-4">Jovial Careers</h1>
-      <img class="img-fluid banner-img" src="../static/banner.jpg" />
+
       <h2 class="mt-2 mb-4">About Jovial</h2>
-      <p class="lead about text-start">Welcome to Jovial, a career website that connects talented professionals with exciting job opportunities at top companies. At Jovial, we understand the importance of finding the right fit when it comes to your career, and we're dedicated to helping you achieve your goals. Our mission is to provide a seamless platform that enables job seekers to browse and apply for positions with ease. With a range of industries and roles available, we aim to help you take your career to the next level. Discover your perfect job match and reach for the stars with Jovial!</p>
+      <div class="row">
+        <p class="lead about text-start col-md-8">Welcome to Jovial, a career website that connects talented professionals with exciting job opportunities at top companies. At Jovial, we understand the importance of finding the right fit when it comes to your career, and we're dedicated to helping you achieve your goals. Our mission is to provide a seamless platform that enables job seekers to browse and apply for positions with ease. With a range of industries and roles available, we aim to help you take your career to the next level. Discover your perfect job match and reach for the stars with Jovial!</p>
+        <img class="d-none d-md-block col-4 rounded-5 mb-4" src="/static/about.jpg">
+      </div>
     </div>
     <div>
       <h2 class="text-center mt-2 mb-4">Open Positions</h2>
@@ -31,8 +36,8 @@
     </div>
     <div class="text-center">
       <button class="btn btn-primary btn-lg">Contact Us</button>
-      <p class="mt-4">Copyright 2023, Jovial</p>
     </div>
   </div>
+  {% include 'footer.html' %}
 </body>
 </html>
