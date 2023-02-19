@@ -23,9 +23,11 @@
       <h2 class="mt-2 mb-4">About Jovial</h2>
       <p class="lead about text-start">Welcome to Jovial, a career website that connects talented professionals with exciting job opportunities at top companies. At Jovial, we understand the importance of finding the right fit when it comes to your career, and we're dedicated to helping you achieve your goals. Our mission is to provide a seamless platform that enables job seekers to browse and apply for positions with ease. With a range of industries and roles available, we aim to help you take your career to the next level. Discover your perfect job match and reach for the stars with Jovial!</p>
     </div>
-    <div class="text-center">
-      <h2 class="mt-2 mb-4">Open Positions</h2>
-      <p>No openings yet</p>
+    <div>
+      <h2 class="text-center mt-2 mb-4">Open Positions</h2>
+        {% for job in jobs %}
+          {% include 'jobitem.html' %}
+        {% endfor %}
     </div>
     <div class="text-center">
       <button class="btn btn-primary btn-lg">Contact Us</button>
