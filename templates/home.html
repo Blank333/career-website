@@ -22,20 +22,20 @@
     <div class="text-center">
       <h1 class="mt-2 mb-4">Jovial Careers</h1>
 
-      <h2 class="mt-2 mb-4">About Jovial</h2>
+      <h2 class="mt-2 mb-4" id="about">About Jovial</h2>
       <div class="row">
-        <p class="lead about text-start col-md-8">Welcome to Jovial, a career website that connects talented professionals with exciting job opportunities at top companies. At Jovial, we understand the importance of finding the right fit when it comes to your career, and we're dedicated to helping you achieve your goals. Our mission is to provide a seamless platform that enables job seekers to browse and apply for positions with ease. With a range of industries and roles available, we aim to help you take your career to the next level. Discover your perfect job match and reach for the stars with Jovial!</p>
-        <img class="d-none d-md-block col-4 rounded-5 mb-4" src="/static/about.jpg">
+        <p class="lead about text-start col-lg-8">Welcome to Jovial, a career website that connects talented professionals with exciting job opportunities at top companies. At Jovial, we understand the importance of finding the right fit when it comes to your career, and we're dedicated to helping you achieve your goals. Our mission is to provide a seamless platform that enables job seekers to browse and apply for positions with ease. With a range of industries and roles available, we aim to help you take your career to the next level. Discover your perfect job match and reach for the stars with Jovial!</p>
+        <img class="d-none d-lg-block col-4 rounded-5 mb-4" src="/static/about.jpg">
       </div>
     </div>
     <div>
-      <h2 class="text-center mt-2 mb-4">Open Positions</h2>
+      <h2 class="text-center mt-2 mb-4" id="positions">Open Positions</h2>
         {% for job in jobs %}
           {% include 'jobitem.html' %}
         {% endfor %}
     </div>
     <div class="text-center">
-      <button class="btn btn-primary btn-lg">Contact Us</button>
+      <a href=" mailto:ceelxx@gmail.com?subject=Question%20about%20job%20openings&body=Name%3A%20%3Center%20here%3E%0D%0A%0D%0AHow%20can%20we%20help%20you%3F%3A%20%3Center%20here%3E%0D%0A%0D%0A " class="btn btn-primary btn-lg m-2">Contact Us</a>
     </div>
   </div>
   {% include 'footer.html' %}
